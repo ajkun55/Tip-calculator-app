@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <main>
+    <img src="./images/logo.svg" alt="" class="logo">
+
+    <div class="panel">
+
+      <div class="input">
+        <form action="" class="col">
+          <label for="bill">Bill</label>
+            <input type="number" id="bill" placeholder="0">
+        </form>
+
+        <form action="">
+          <label for="selecttip">Select Tip %</label>
+          <div class="tips">
+            <div class="tip">
+              <input type="radio" name="radioGroup" value="0.05" id="fivep"><label class="radiplabel" for="fivep">5%</label>
+            </div>
+            <div class="tip">
+              <input type="radio" name="radioGroup" value="0.10" id="tenp"><label class="radiplabel" for="tenp">10%</label>
+            </div>
+            <div class="tip">
+              <input type="radio" name="radioGroup" value="0.15" id="fiftep"><label class="radiplabel" for="fiftep">15%</label>
+            </div>
+            <div class="tip">
+              <input type="radio" name="radioGroup" value="0.20" id="twentyp"><label class="radiplabel" for="twentyp">20%</label>
+            </div>
+            <div class="tip">
+              <input type="radio" name="radioGroup" value="0.25" id="twentyfivep"><label class="radiplabel" for="twentyfivep">25%</label>
+            </div>
+            <div class="tip">
+              <input type="radio" name="radioGroup" value="" id="custom-radio"><input type="text" name="radioGroup" id="custom" placeholder="Custom">
+            </div>
+          </div>
+                    
+        </form>
+
+        <form action="" class="col">
+          <label for="people">Number of People<span class="err">Can't be zero</span></label>
+            <input type="number" id="people" placeholder="0">
+        </form>
+      </div>
+
+      
+
+      <div class="output">
+        <div class="row">
+          <p>Tip Amount
+           <span>/ person</span></p>
+           <p class="output-amount" id="tip-per"></p>
+        </div>
+        <div class="row">
+          <p>Total
+            <span>/ person</span></p>
+            <p class="output-amount" id="total-per"></p>
+        </div>
+        <button>Reset</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/ajkun55/Tip-calculator-app">John A</a>.
+    </div>
+  </footer>  
+  <script src="./main.js"></script>
+</body>
+</html>
